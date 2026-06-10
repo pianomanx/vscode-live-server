@@ -109,9 +109,10 @@ export class Helper {
         });
 
         const file = Config.getFile;
+        const host = Config.getHost || '127.0.0.1';
         return {
             port: port,
-            host: '0.0.0.0',
+            host: host,
             root: rootPath,
             file: file,
             open: false,
